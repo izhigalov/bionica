@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {     
+     .navbar-collapse {
+     	display: flex !important;
+     	flex-direction: column-reverse;
+     	align-items: center;
+     }
+
+     .collapse.navbar-collapse > ul{
+     	flex-direction: column;
+     	
+     }
+
+     .collapse.navbar-collapse > ul > li{
+		padding: 5px 0px;
+     }
+
+     .collapse.navbar-collapse ul li a{
+     	margin: 0;
+     }
+
+     .header-top{
+     	padding: 15px 0px;
+     	margin-top: 0;
+     	height: inherit;
+     	flex-direction: column;
+     }
+
+
+ }
