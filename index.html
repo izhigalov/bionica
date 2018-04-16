@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Бионика</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet" >
+    <link href="css/mediaqueries.css" rel="stylesheet" >
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js" type="text/javascript"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body style="padding-top:105px;">
+      <div id="callback" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Заказать звонок</h4>
+            <!-- <input type="hidden" name="header-form" value="check_land"> -->
+          </div>
+          <div class="modal-body">
+            <p>В течении рабочего дня с вами свяжется наш специалист и ответит на все вопросы.</p>
+            <form class="form-horizontal text-center" role="form">
+              <div class="form-result"></div>
+              <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="Как к вам можно обращаться" required/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <input type="tel" class="form-control" id="phone" placeholder="Номер телефона" required/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <button type="submit" name="btt" value="back_call" class="btn btn-primary">Заказать звонок</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div id="callback2" class="modal fade callback2">
+      <div class="modal-dialog2">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Заказать звонок</h4>
+            <!-- <input type="hidden" name="header-form" value="check_land"> -->
+          </div>
+          <div class="modal-body">
+            <p>В течении рабочего дня с вами свяжется наш специалист и ответит на все вопросы.</p>
+            <form class="form-horizontal text-center" role="form">
+              <div class="form-result"></div>
+              <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="Как к вам можно обращаться" required/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <input type="tel" class="form-control" id="inputPassword3" placeholder="Номер телефона" required/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <button type="submit" name="btt" value="back_call" class="btn btn-primary">Заказать звонок</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header" role="navigation">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="img/bionikalogo-012.png" height="90px" alt="">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <div class="header-top pull-right">
+            <div class="phone">
+              +7 (3412) 90-64-24
+            </div>
+            <div class="call-form">
+              <a href="#callback" class="callback" data-toggle="modal">Заказать звонок</a>
+            </div>
+            <!-- <div class="form">
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="Поиск по сайту">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">&#128269;</button>
+                </span>
+              </div>
+            </div> -->
+            <div class="clearfix"></div>
+          </div>
+          <ul class="nav navbar-nav header-height">
+            <li><a href="about-stantion.html">О станции Бионика</a></li>
+            <li><a href="bussines.html">Бионика для бизнеса</a></li>
+            <li><a href="installation.html">Монтаж</a></li>
+            <li><a href="price.html">Стоимость</a></li>
+            <li><a href="ready-work.html">Выполненные работы</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <!-- <li><a href="about.html">О компании</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="container" style="margin-bottom:40px;">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <!-- <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/bionika_foto2.jpg">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- <div class="jumbotron-main jumbotron mrg-btn bg-con-blue_light">
+      <div class="container">
+        <div class="row custom_width-flex">
+          <div class="col-md-8">
+              <h2>Станция биологической</br>очистки «БИОНИКА»</h2>
+          </div>
+          <div class="col-md-5">
+            <p>Уменьшеная копия очистных сооружений</p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#callback">Узнать больше</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="jumbotron mrg-btn bg-con-blue_light">
+      <div class="container">
+        <div class="row custom_width-flex text-center">
+          <div class="col-md-8 call-form">
+            <h4>Как обустроить канализацию в частном доме и потом не пожалеть?</h4>
+            <p>Решили строить выгребную яму или установить септик? Сначала узнайте, что мешает этим вариантам стать правильным решением вопроса канализации. Ответ - в нашем исследовании.</p>
+            <p>«7 недостатков септиков и выгребных ям»</p>
+            <a target="_blank" href="img/marketing-kit.pdf">Посмотреть бошюру (PDF)</a>
+          </div>
+            <!-- <div class="col-md-6 page-first">
+                <h2>«БИОНИКА» для бизнеса</h2>
+            </div>
+            <div class="col-md-6 page-first">
+              <p>Проектирование и установка автономной канализации с согласованием Госэкспертизы.</p>
+            </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2><small>Вся правда о септиках и выгребных ямах</small></h2>
+          <p>«Экономия», которая не экономит. Чем же плохи выгребные ямы и септики?</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Септик - это решение всех проблем? Как бы не так!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Благодаря рекламе многим кажется, что септик - это решение «под ключ», закопал и забыл. Так ли это?
+            Во-первых, производители умалчивают о том, что для работы септика на участке нужно соорудить и менять фильтрационное поле
+            : сточные воды у септика очищены на 50%, оставшаяся жидкость нуждается в доочистке,
+            что и осуществляется за счет поля фильтрации - это траншеи с гравием, песком и щебнем.
+            Поле должно располагаться в 15-30 метрах от плодовых растений, источников воды.
+            Даже «правильный» септик - это просто гниение, очистка только 50%. Так что септик - это по сути «фильтр»,
+            который нужно чистить. А через 5-7 лет — полная замена фильтрационного поля.
+            Вам охота перекопать 40-50 куб. грунта?</p>
+        </div>
+        <div class="col-md-6">
+          <img class="full_width" height="250px"src="img/graficheskaya-shema-printsipa-deystviya-1.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Сюрпризы септиков:</h3>
+          <ul>
+            <li>Зависимость от пикового сброса</li>
+            <li>Требуются подъездные пути для ассенизатора</li>
+            <li>Риск попадания стоков в грунт и воды</li>
+            <li>Частые переполнения при глинистых грунтах</li>
+            <li>Сильно усложнена работа при высоком уровне вод</li>
+            <li>Требует серьезных строительных работ раз в 5-7 лет</li>
+            <li>Отбирает полезную площадь участка</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Септик дешевле? Давайте посчитаем:</h3>
+          <ul>
+            <li><strong>40-50 тыс. рублей</strong> - стоимость септика.</li>
+            <li><strong>40-50 тыс. рублей</strong> - стоимость монтажа вместе с фильтрационным полем.</li>
+            <li><strong>2 000 рублей за вызов</strong> - откачка активного ила 2 раза в год.</li>
+            <li><strong>От 20 до 40 тыс. рублей</strong> - полная замена фильтрационного поля.</li>
+            <h3><strong>Итого:</strong> 145 тыс. рублей (за 5 лет)</h3>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3>Развенчиваем мифы о том, что выгребная яма - это дешево и нет проблем</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="text-center">Решили строить выгребную яму?</h4>
+          <p class="text-center">Будьте готовы к этому:</p>
+          <ul>
+            <li>
+              <strong>Отравление почвы вокруг</strong></br>
+              Вопреки расхожему мнению, продукты жизнедеятельности человека (тем более смешанные с бытовой химией) являются не удобрением, а отравой.
+              А значит, Вы и ваши дети и внуки будут есть отравленные фрукты и овощи.
+            </li>
+            <li>
+              <strong>Заражение воды</strong></br>
+              На участке есть скважина или колодец? Возможно заражение воды.
+              В колодец она легко попадет через водоносные слои почвы,
+              а в скважину (которая, казалось бы, глубоко) - через неплотности, допущенные при монтаже и бурении.
+            </li>
+            <li>
+              <strong>Межсезонные «авралы»</strong></br>
+              В период интенсивных дождей или таяния снегов в ямы неизбежно попадает вода, что создает переполнение.
+              В такие времена очередь на ассенизаторов вырастает до безумных пределов, приходится ждать,
+              и все это время пользоваться канализацией нельзя - переполнена.
+            </li>
+            <li>
+              <strong>Специфический запах.</strong></br>
+              Без комментариев.
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img class="full_width" src="img/vygrebnaya-yama.jpg" alt="">
+          <h4>Думаете дешево? Давайте посчитаем:</h4>
+          <ul>
+            <li><strong>45 тыс. рублей</strong> - строительство ямы.</li>
+            <li><strong>18 тыс. рублей</strong> - откачка ассенизатором первые 2 года.</li>
+            <li><strong>36 тыс. рублей</strong> - откачка в год, последующее время.</li>
+          </ul>
+          <h3><strong>Итого:</strong> 189 тыс. рублей (за 5 лет)</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container b-blocks__margin-top">
+      <h2>
+        <small class="text-center mrg-none-bottom">Почему все больше клиетов выбирают Бионику?</small>
+      </h2>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="img/ecology.png" height="64px" class="center-block img-responsive" alt="">
+        </div>
+        <div class="col-md-10">
+          <h4>Экологичность</h4>
+          <p>7 ступеней очистки вместо двух у септика. Вода очищается на 98%. Ей можно поливать газон, мыть машину и сливать в реки.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="img/forgot.png" class="center-block img-responsive" alt="">
+        </div>
+        <div class="col-md-10">
+          <h4>Поставил и забыл</h4>
+          <p>
+            Станция не всплывает и не заливается водой. Вызов ассенизатора и покупка бактерий не требуется. Экономия до 20 000 ₽ в год.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="img/anywhere.png" class="center-block img-responsive" alt="">
+        </div>
+        <div class="col-md-10">
+          <h4>Устанавливается где угодно</h4>
+          <p>Высокий уровень грунтовых вод, при котором установка септика невозможна, или глинистая почва – не являются препятствием для станции БИОНИКА.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="img/time.png" class="center-block img-responsive" alt="">
+        </div>
+        <div class="col-md-10">
+          <h4>Долговечность</h4>
+          <p>Основные детали — из полипропилена, срок службы 50 лет.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="img/electricity.png" class="center-block img-responsive" alt="">
+        </div>
+        <div class="col-md-10">
+          <h4>Не боится отключения электричества</h4>
+          <p>Работает в режиме многоступенчатого септика при отключении энергии, бактерии не погибают. Входит в рабочий режим самостоятельно.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="img/sertificate.png" class="center-block img-responsive" alt="">
+        </div>
+        <div class="col-md-10">
+          <h4>Продукция сертифицирована.</h4>
+          <p>Все виды станций соответствуют санитарно-эпидемиологическим нормам.</p>
+        </div>
+      </div>
+      <div class="text-center call-form">
+        <a href="about-stantion.html">Подробнее о преимуществах</a>
+      </div>
+    </div>
+    <div class="container text-center b-view__photos">
+      <div class="row">
+        <div class="col-md-12">
+          <h2><small>Как выглядит станция Бионика</small></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <img class="full_width" src="img/img2173uvu6gjd_hte3GTr.jpg" alt="">
+        </div>
+        <div class="col-md-5">
+          <img class="full_width" src="img/3-avtonomnaya-kanalizatsiya-dlya-chastnyih-domov.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <img class="full_width" src="img/montazh-mbo-039.jpg" alt="">
+        </div>
+        <div class="col-md-5">
+          <img class="full_width" src="img/img20150416174529.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <img class="full_width" src="img/img20150803153155.jpg" alt="">
+        </div>
+        <div class="col-md-5">
+          <img class="full_width" src="img/montazh-mbo-029_t0CUKPY.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 numbers">
+          <h2>
+            <small class="text-center mrg-none-bottom">Как мы работаем</small>
+          </h2>
+          <ol>
+            <li class="b-work__first">
+              <h3>Обследование с выездом на объект</h3>
+              <h4>Что входит в обследование?</h4>
+              <ul>
+                <li>Оцениваем уровень грунтовых вод, состав грунта, уклоны ландшафта.</li>
+                <li>Подбираем оптимальное место установки станции с учетом пожеланий заказчика и технической возможности.</li>
+                <li>Подбор станции в соответствии с условиями эксплуатации (кол-во проживающих человек, объем стоков).</li>
+                <li>Бесплатная консультация по теме устройства канализации на участке (плюсы и минусы возможных вариантов).</li>
+              </ul>
+            </li>
+            <li class="b-work__second">
+              <h3>Заключение договора.</h3>
+              <p>Предоплата 70% от полной стоимости. Поставка станции в течение 7 дней.</p>
+            </li>
+            <li class="b-work__third">
+              <h3>Монтаж</h3>
+              <p>Монтаж занимает два дня. Первый день - земляные работы. Второй - пуско-наладочные.</p>
+              <p>Гарантия — 5 лет на механические повреждения, герметичность и всю «начинку».</p>
+            </li>
+          </ol>
+          <div class="call-form text-center">
+            <a href="installation.html">Узнать об этапах работы больше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well well-main-page" style="margin-top: 30px;">
+            <h3>Закажите бесплатное обследование участка и получите:</h3>
+            <ul>
+              <li>паспорт участка с рекомендацией по месту установки очистных сооружений</li>
+              <li>бесплатную геотехническую оценку участка: вид почвы, уровень грунтовых вод</li>
+            </ul>
+            <form class="form-inline" role="form">
+              <div class="form-result1" style="display:none;"></div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputTel">Номер телефона</label>
+                <input type="tel" class="form-control input-lg main-page-form" id="exampleInputTel" placeholder="Номер телефона">
+              </div>
+              <button type="submit" name="btt" value="check_land" class="btn btn-primary btn-lg">Заказать обследование</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="text-center">
+        <small class="mrg-none-bottom">
+          Стоимость монтажа станции
+        </small>
+      </h2>
+      <div class="row">
+        <div class="col-md-4">
+          <a class="decoration-none" href="#callback2" class="callback" data-toggle="modal">  
+            <div class="thumbnail text-center bg-blue-light">
+              <h4 class="b-price__instalation">Эконом</h4>
+              <p>Заказчик сам покупает материалы и выполняет работы. Оплата только за надзор (контроль, спецификации и рекомендации)</p>
+              <h4 class="b-price__instalation">10 000 ₽</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="decoration-none" href="#callback2" "callback" data-toggle="modal">
+            <div class="thumbnail text-center bg-blue">
+              <h4 class="b-price__instalation">Норма</h4>
+              <p>Обычная установка, без дренажного колодца, с прокладкой сетей до цоколя, земляные работы выполняются спецтехникой (подходит, когда есть место для слива)</p>
+              <h4 class="b-price__instalation">48 000 ₽</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="decoration-none" href="#callback2" class="callback" data-toggle="modal">
+            <div class="thumbnail text-center bg-green">
+              <h4 class="b-price__instalation">Стандарт</h4>
+              <p>Установка с дренажным колодцем, с прокладкой сетей до цоколя, земляные работы выполняются спецтехникой (когда необходим дополнительный резервуар для стока)</p>
+              <h4 class="b-price__instalation">87 000 ₽</h4>
+            </div>
+          </a>
+        </div>
+        <div class="call-form text-center">
+          <a href="price.html">Подробнее о стоимости монтажа станции</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">
+          <small>Комфорт квартиры в загородном доме</small>
+        </h2>
+        <div style="margin-bottom:40px;">
+          <ul>
+            <li>Стирайте, умывайтесь, мойте посуду, пользуйтесь санузлом. Все как в городе.</li>
+            <li>Нет ограничений на объем слива: посудомоечная машина, раковина, санузел, душевая кабина.</li>
+            <li>Комфорт круглый год. Не важно - зима или лето! Никаких сюрпризов и заботы.</li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center b-apartment__contain">
+          <img class="b-apartment__icon" src="img/posudomojka.png" alt="">
+        </div>
+        <div class="col-md-4 text-center b-apartment__contain">
+          <img class="b-apartment__icon" src="img/419412b8.png" alt="">
+        </div>
+        <div class="col-md-4 text-center b-apartment__contain">
+          <img  class="b-apartment__icon" src="img/st.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>
+        <small class="text-center">Отзывы наших клиентов</small>
+      </h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-green review">
+            <h3>Васильева Анна Александровна</h3>
+            <h4>Новый Игерман, 16 июля 2015</h4>
+            <p>Устанавливаем сейчас вторую станцию у этой компании, первая МБО-1,5, работает 2 года, сейчас построили ещё большую баню с гостевым домом, что ведёт к значительным увеличению количества стоков, приходиться устанавливать дополнительно небольшую МБО-075.
+              Работами которые проведены 2 года назад довольны, сейчас посмотрим.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-blue-light review">
+            <h3>Бугреев Алексей Николаевич</h3>
+            <h4>Ижевск, ул. Камбарская, 28 мая 2015</h4>
+            <p>К покупке установки я подготовился основательно. Перечитал различную литературу в интернете.
+              Ознакомился с отзывами обладателей станций. Изучил принцип работы каждой системы, благо их на рынке предостаточно.
+              Удивился изобилию и производителей, и моделей. Покупатель я очень требовательный, по образованию инженер. поэтому подошел к данному вопросу ответственно.
+              В итоге остановил свой выбор на МБО-БИОНИКА.
+              Конечно были сомнения и некоторые вопросы, но в процессе общения со специалистами компании изучения тех. документации решили устанавливать.
+              Станцией пока не пользуюсь, так как дом ещё не достроен (устанавливали ещё только после возведения фундамента).
+              Но вопрос с канализацией считаю решён надёжно.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-blue review">
+            <h3>Марченко Татьяна Степановна</h3>
+            <h4>Ижевск, пр. Крамский, 10 сентября 2014</h4>
+            <p>Живем на «Болоте». Устанавливали станцию МБО 1,0.
+              Честно говоря, не надеялась, что в таких условиях как у нас найду того, кто бы взялся смонтировать очистное сооружение (топь, вода очень высоко, болото одним словом).
+              Переливной септик здесь нельзя, выгребная тоже под вопросом.
+              У соседей постоянно заливает, особенно весной, да и вонь такая…
+              Звонила в пару мест кто занимается современными станциями.
+              Очистное сооружение продать готовы, а смонтировать и взять ответственность за дальнейшую работу не взялись.
+              Здесь ни каких вопросов и сложностей не возникло, сделали всё нормально, правда прокопались дольше чем я думала, но всё работает, спасибо.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-green review">
+            <h3>Лазукова Татьяна Серафимовна</h3>
+            <h4>Завьяловский р-н, д. Поварёнки, 28 мая 2014</h4>
+            <p>В прошлом году, в мае месяце мы с мужем приобрели очистную установку МБО-БИОНИКА 0,75.
+              Рабочие оперативно ее привезли и установили. До покупки была обычная выгребная яма.
+              Вопросов в процессе работы установки не возникало, даже зимой.
+              Очищенная вода уходит в канаву. Покупкой мы довольны.
+              Спасибо компании, что облегчили нашу жизнь, добавив комфорта.</p>
+          </div>
+        </div>
+      </div>
+      <div class="call-form text-center">
+        <a href="ready-work.html">Читать больше отзывов</a>
+      </div>
+    </div>
+    <!-- <div class="container b-blocks__margin-top">
+      <h2>
+        <small>4 отличия «Бионики» от аналогов</small>
+      </h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/f1.jpg" alt="">
+        </div>
+        <div class="col-md-8 numbers">
+          <ol class="b-main-page__contrast">
+            <li>Защита от переполнения</li>
+            <li>Установлен блок обеззараживателя - не нужно докупать отдельно</li>
+            <li>Бактерии не вымываются и поддерживаются в необходимом количестве - Есть ершовая загрузка</li>
+            <li>Нет ограничений на объем слива</li>
+          </ol>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="container b-blocks__margin-top">
+      <h2>
+        <small>Отзывы наших клиентов</small>
+      </h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-green review">
+            <h3>Васильева Анна Александровна</h3>
+            <h4>Новый Игерман, 16 июля 2015</h4>
+            <p>Устанавливаем сейчас вторую станцию у этой компании, первая МБО-1,5, работает 2 года, сейчас построили ещё большую баню с гостевым домом, что ведёт к значительным увеличению количества стоков, приходиться устанавливать дополнительно небольшую МБО-075.
+              Работами которые проведены 2 года назад довольны, сейчас посмотрим.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-blue-light review">
+            <h3>Бугреев Алексей Николаевич</h3>
+            <h4>Ижевск, ул. Камбарская, 28 мая 2015</h4>
+            <p>К покупке установки я подготовился основательно. Перечитал различную литературу в интернете.
+              Ознакомился с отзывами обладателей станций. Изучил принцип работы каждой системы, благо их на рынке предостаточно.
+              Удивился изобилию и производителей, и моделей. Покупатель я очень требовательный, по образованию инженер. поэтому подошел к данному вопросу ответственно.
+              В итоге остановил свой выбор на МБО-БИОНИКА.
+              Конечно были сомнения и некоторые вопросы, но в процессе общения со специалистами компании изучения тех. документации решили устанавливать.
+              Станцией пока не пользуюсь, так как дом ещё не достроен (устанавливали ещё только после возведения фундамента).
+              Но вопрос с канализацией считаю решён надёжно.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-blue review">
+            <h3>Марченко Татьяна Степановна</h3>
+            <h4>Ижевск, пр. Крамский, 10 сентября 2014</h4>
+            <p>Живем на «Болоте». Устанавливали станцию МБО 1,0.
+              Честно говоря, не надеялась, что в таких условиях как у нас найду того, кто бы взялся смонтировать очистное сооружение (топь, вода очень высоко, болото одним словом).
+              Переливной септик здесь нельзя, выгребная тоже под вопросом.
+              У соседей постоянно заливает, особенно весной, да и вонь такая…
+              Звонила в пару мест кто занимается современными станциями.
+              Очистное сооружение продать готовы, а смонтировать и взять ответственность за дальнейшую работу не взялись.
+              Здесь ни каких вопросов и сложностей не возникло, сделали всё нормально, правда прокопались дольше чем я думала, но всё работает, спасибо.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-green review">
+            <h3>Лазукова Татьяна Серафимовна</h3>
+            <h4>Завьяловский р-н, д. Поварёнки, 28 мая 2014</h4>
+            <p>В прошлом году, в мае месяце мы с мужем приобрели очистную установку МБО-БИОНИКА 0,75.
+              Рабочие оперативно ее привезли и установили. До покупки была обычная выгребная яма.
+              Вопросов в процессе работы установки не возникало, даже зимой.
+              Очищенная вода уходит в канаву. Покупкой мы довольны.
+              Спасибо компании, что облегчили нашу жизнь, добавив комфорта.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-green review">
+            <h3>Максимычева Елена Васильевна</h3>
+            <h4>СНТ «Источник», 29 ноября 2013</h4>
+            <p>У нас соседи по даче установили такую систему канализации.
+              Вот и мы решились вместе с мужем.
+              Конечно, сначала показалось дороговато ,но потом посчитали расходы на эксплуатацию и решили установить пользуемся уже год, очень удобно.
+              Ассенизатор не нужен, ни запаха, ничего нет. Сразу чувствуешь себя как в квартире.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail text-center bg-blue-light review">
+            <h3>Синдеева Татьяна Александровна</h3>
+            <h4>к.п. Орловское, 24 декабря 2013</h4>
+            <p>Мы с мужем в ноябре 2013, заказали установку МБО-БИОНИКА 1,5.
+              Теперь нет ни каких проблем с канализацией у нас в доме, раньше стояли бетонные кольца, и столько денег уходило на откачку, просто кошмар.
+              Сейчас установив данную систему, она нам окупится за 1.5 года, и не нужно будет больше вызывать машину.
+              Перед покупкой нас консультировал инженер Николай, консультация была очень грамотная, вообще по всем вопросам связанным с канализацией, дренажом и водоотведением участка.
+              Цены приемлемые, до этого были наверное местах в шести.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="b-wrap__footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="about-stantion.html">О станции Бионика</a>
+            <a href="bussines.html">Бионика для бизнеса</a>
+            <a href="installation.html">Монтаж</a>
+            <a href="price.html">Стоимость</a>
+            <a href="ready-work.html">Выполненные работы</a>
+            <a href="contact.html">Контакты</a>
+            <!-- <a href="about.html">О компании</a> -->
+          </div>
+          <div class="col-md-4">
+            <div class="b-phone">
+              <div class="b-phone__number">
+                +7 (3412) 90-64-24
+              </div>
+              <div class="b-phone__call-form call-form">
+                <a href="#callback" name="btt" value="back_call" data-toggle="modal">Заказать звонок</a>
+              </div>
+            </div>
+            <div class="b-adress">
+              <div class="b-adress__city">
+                г. Ижевск,
+              </div>
+              <div class="b-adress__street">
+                пр. Дерябина, 2/209, оф. 211.
+              </div>
+              <div class="b-adress__anchor call-form">
+                <a href="contact.html">Посмотреть на карте</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 align">
+            <div class="b-сopyright">
+              &copy; БИОНИКА 2017
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
